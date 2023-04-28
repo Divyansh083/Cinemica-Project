@@ -10,7 +10,6 @@ import { MovieContext } from "../context/movie.context";
 
 const MovieLayout = (props) => {
   const { id } = useParams();
-  console.log("Layout_ID: ",id);
   const { movie, setMovie } = useContext(MovieContext);
 
   useEffect(() => {

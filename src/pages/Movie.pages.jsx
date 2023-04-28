@@ -9,15 +9,11 @@ import MovieHero from "../components/MovieHero/MovieHero.component";
 import Cast from "../components/Cast/Cast.component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
 
-// config
-// import TempPoster from "../config/TempPoster.config";
-
 // context
 import { MovieContext } from "../context/movie.context";
 
 const Movie = () => {
   const { id } = useParams();
-  console.log("My_Id: ", id);
   const { movie } = useContext(MovieContext);
   const [cast, setCast] = useState([]);
   const [similarMovies, setSimilarMovies] = useState([]);
